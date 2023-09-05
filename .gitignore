@@ -1,1 +1,11 @@
-cp -r slidev/* .
+node_modules
+.DS_Store
+dist
+*.local
+index.html
+.remote-assets
+components.d.ts
+*.out
+slides-export.pdf
+*.exe
+test.c
