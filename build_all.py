@@ -42,3 +42,11 @@ html+="</ul></body></html>"
 
 with open("dist/index.html", 'w') as f:
     f.write(html)
+
+redirects = ""
+for md_file in md_files:
+    with open(f'dist/{md_file[:-3]}/_redirects', 'r') as f:
+        redirects+=f.read()+'\n'
+
+with open('dist/_redirects', 'w') as f:
+    f.write(redirects)
