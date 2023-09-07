@@ -25,7 +25,7 @@ jobs:
               run: |
                   npm install
                   npm i -g @slidev/cli
-                  slidev build --base slidev
+                  python3 build_all.py slidev
             - name: Deploy to GitHub Pages
               if: success()
               uses: crazy-max/ghaction-github-pages@v2

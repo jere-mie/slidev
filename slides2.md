@@ -6,7 +6,7 @@ class: text-center
 highlighter: shiki
 lineNumbers: false
 info: |
-  ## Slidev Starter Template 1
+  ## Slidev Starter Template 2
   Presentation slides for developers.
 
   Learn more at [Sli.dev](https://sli.dev)
