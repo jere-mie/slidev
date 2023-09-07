@@ -17,7 +17,7 @@ title: Welcome to Slidev
 mdc: true
 ---
 
-# Welcome to Slidev
+# Welcome to Slidev 2
 
 Presentation slides for developers
 
