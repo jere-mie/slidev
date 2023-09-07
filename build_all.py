@@ -33,9 +33,9 @@ html = """
 for md_file in md_files:
     os.mkdir(f"dist/{md_file[:-3]}")
     if base is not None:
-        os.system(f"npm run build {md_file} --download --out dist/{md_file[:-3]} --base /{base}/{md_file[:-3]}/")
+        os.system(f"slidev build {md_file} --base /{base}/{md_file[:-3]}/ --download --out dist/{md_file[:-3]}")
     else:
-        os.system(f"npm run build {md_file} --download --out dist/{md_file[:-3]} --base /{md_file[:-3]}/")
+        os.system(f"slidev build {md_file} --download --out dist/{md_file[:-3]} --base /{md_file[:-3]}/")
     html+=f'<li><a href="{md_file[:-3]}/">{md_file[:-3]}</a></li>'
 
 html+="</ul></body></html>"
